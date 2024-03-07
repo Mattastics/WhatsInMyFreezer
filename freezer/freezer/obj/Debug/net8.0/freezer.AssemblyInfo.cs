@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("freezer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bdeeb6690b5ec399089d48a338e3419d088353a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c431b0f79dc9386bbdc4f325513ddf60cb2f6ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("freezer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("freezer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

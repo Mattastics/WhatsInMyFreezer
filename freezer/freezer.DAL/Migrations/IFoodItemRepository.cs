@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace freezer.DAL.Migrations
+﻿namespace freezer.DAL.Migrations
 {
     public interface IFoodItemRepository
     {
-        void AddFoodItem (FoodItem foodItem);
-        FoodItem GetFoodItemById (int foodItemid);
+        void AddFoodItem(FoodItem foodItem);
+        FoodItem GetFoodItemById(int foodItemid);
 
-        public List<FoodItem> GetAllFoodItems ();
+        public List<FoodItem> GetAllFoodItems();
+
+        public void UpdateFoodItem(FoodItem updatedFoodItem);
+
+        FoodItem GetFoodItemByName(string name);
+
+        bool DoesFoodItemExist(int foodItemid);
+
+        void RemoveQuantityFromFoodItem(int foodItemId, int quantityToRemove);
+
+
     }
 }

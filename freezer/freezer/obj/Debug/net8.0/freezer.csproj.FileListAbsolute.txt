@@ -54,7 +54,6 @@ C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\runtimes\win-x86\native\e
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\freezer.DAL.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\freezer.DAL.pdb
 C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\freezer.csproj.AssemblyReference.cache
-C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\freezer.csproj.CopyComplete
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
@@ -79,3 +78,4 @@ C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Opti
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\freezer.csproj.Up2Date
