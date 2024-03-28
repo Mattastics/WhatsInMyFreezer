@@ -1,0 +1,24 @@
+﻿@page
+@model FreezerWebPages.Pages.ViewFoodItemsModel
+
+<h2>Food Items in Freezer</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Date Added</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.FoodItems)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.DateAdded.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

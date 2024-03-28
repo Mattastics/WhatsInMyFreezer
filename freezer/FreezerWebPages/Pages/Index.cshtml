@@ -1,0 +1,28 @@
+﻿@page
+@model FreezerWebPages.Pages.IndexModel
+
+<h1>Whats in my freezer?</h1>
+
+<div class="actions">
+    <a class="btn" href="/FoodItems/AddFoodItems">Add items to your freezer</a>
+    <a class="btn" href="/FoodItems/ViewFoodItems">View the items in your freezer</a>
+    <a class="btn" href="/FoodItems/RemoveFoodItems">Remove items from your freezer</a>
+</div>
+
+<style>
+    .actions {
+        margin-top: 20px;
+    }
+    .btn {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>

@@ -1,43 +1,109 @@
-﻿using freezer.DAL.Migrations;
+﻿using freezer.DAL.Entities;
 using freezer.Logic;
 using freezer.Validators;
 
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+//Single Responsibility Priniciple: This class is responsible for the logic related to freezer inventory management such as 
+//adding, updating, and retrieving food items, ensuring that only has one reason to change. 
+
+//Dependency Inversion Principle: By depenting on the IFoodItemRepositoy interface, this class adheres to the
+//Dependency Inversion Principle, allowing flexibility and east of testing. 
 
 namespace freezer
 {
     public class FreezerLogic : IFreezerLogic
     {
         private readonly IFoodItemRepository _foodItemRepo;
+        private readonly FoodDataService _foodDataService;
 
-        public FreezerLogic(IFoodItemRepository foodItemRepository)
+        public FreezerLogic(IFoodItemRepository foodItemRepository, FoodDataService foodDataService)
         {
             _foodItemRepo = foodItemRepository;
+            _foodDataService = foodDataService;
         }
 
-        public void AddFoodItem(FoodItem foodItem)
+
+        public async Task<string> GetFoodItemNameByUPCAsync(string upcCode)
         {
-            var validator = new FoodItemValidator();
-            if (validator.Validate(foodItem).IsValid)
+            return await _foodDataService.GetFoodItemNameByUPCAsync(upcCode);
+        }
+
+        public async Task AddFoodItems(List<FoodItem> foodItems)
+        {
+            foreach (var foodItem in foodItems)
             {
-                _foodItemRepo.AddFoodItem(foodItem);
+                var validator = new FoodItemValidator();
+                var validationResult = validator.Validate(foodItem);
+                if (validationResult.IsValid)
+                {
+                    if (string.IsNullOrWhiteSpace(foodItem.Name) && !string.IsNullOrWhiteSpace(foodItem.UPC))
+                    {
+                        foodItem.Name = await _foodDataService.GetFoodItemNameByUPCAsync(foodItem.UPC);
+                    }
+
+                    var existingItem = _foodItemRepo.GetFoodItemByUPC(foodItem.UPC);
+                    if (existingItem != null)
+                    {
+                        existingItem.Quantity += foodItem.Quantity;
+                        _foodItemRepo.UpdateFoodItem(existingItem);
+                    }
+                    else
+                    {
+                        _foodItemRepo.AddFoodItems(new List<FoodItem> { foodItem });
+                    }
+                }
+                else
+                {
+                    // Handle validation errors
+                    throw new InvalidOperationException(validationResult.Errors.Select(e => e.ErrorMessage).FirstOrDefault());
+                }
             }
-            var existingItem = _foodItemRepo.GetFoodItemByName(foodItem.Name);
-            if (existingItem != null)
+        }
+
+        public async Task AddFoodWithoutUPC(List<FoodItem> foodItems)
+        {
+            foreach (var foodItem in foodItems)
             {
-                existingItem.Quantity += foodItem.Quantity;
-                _foodItemRepo.UpdateFoodItem(existingItem);
+                // Assume the name is provided by the user and validate the item
+                var validator = new FoodItemValidator();
+                var validationResult = validator.Validate(foodItem);
+
+                if (validationResult.IsValid)
+                {
+                    // Generate a placeholder UPC if it's missing or a temporary one was previously assigned
+                    if (string.IsNullOrWhiteSpace(foodItem.UPC) || foodItem.UPC.StartsWith("TEMP"))
+                    {
+                        // Generating a temporary UPC using current ticks and the hash code of the item's name
+                        long ticks = DateTime.UtcNow.Ticks;
+                        int nameHash = foodItem.Name.GetHashCode();
+                        foodItem.UPC = $"TEMP{ticks}{nameHash}";
+                    }
+
+
+                    // Check if an item with the same placeholder UPC already exists
+                    var existingItem = _foodItemRepo.GetFoodItemByUPC(foodItem.UPC);
+                    if (existingItem != null)
+                    {
+                        existingItem.Quantity += foodItem.Quantity;
+                        _foodItemRepo.UpdateFoodItem(existingItem);
+                    }
+                    else
+                    {
+                        _foodItemRepo.AddFoodItems(new List<FoodItem> { foodItem });
+                    }
+                }
+                else
+                {
+                    // Handle validation errors
+                    throw new InvalidOperationException(validationResult.Errors.Select(e => e.ErrorMessage).FirstOrDefault());
+                }
             }
-            else
-            { _foodItemRepo.AddFoodItem(foodItem);
-            }
+        }
+
+
+        public FoodItem GetFoodItemByUPC(string upcCode)
+        {
+
+            return _foodItemRepo.GetFoodItemByUPC(upcCode);
         }
 
         public List<FoodItem> GetFoodItems()
@@ -69,32 +135,17 @@ namespace freezer
             return _foodItemRepo.DoesFoodItemExist(foodItemId);
         }
 
-        //public void AddQuantityToFoodItem(string foodItemName, int quantityToAdd)
-        //{
-        //    var foodItem = _foodItemRepo.GetFoodItemByName(foodItemName);
-        //    if (foodItem == null)
-        //    {
-        //        foodItem.Quantity += quantityToAdd;
-        //        _foodItemRepo.UpdateFoodItem(foodItem);
-                
-        //    }
-        //}
 
-        public void RemoveQuantityFromFoodItem(string foodItemName, int quantityToRemove)
+        public void RemoveFoodItems(List<FoodItem> itemsToRemove)
         {
-            var foodItem = _foodItemRepo.GetFoodItemByName(foodItemName);
-            if (foodItem != null)
-            {
-                _foodItemRepo.RemoveQuantityFromFoodItem(foodItem.FoodItemId, quantityToRemove);
+           
+            _foodItemRepo.RemoveFoodItems(itemsToRemove);
+        }
 
-                //Check if there is still more of this item. If not inform the user.
-                if (!_foodItemRepo.DoesFoodItemExist(foodItem.FoodItemId))
-                {
-                    Console.WriteLine($"That was the last of the {foodItemName}. It has been removed.");
-                }
-            }
-            else
-            { Console.WriteLine("Item not found"); }    
+
+        public void RemoveFoodItem(int foodItemid, int quantity)
+        {
+            _foodItemRepo.RemoveFoodItem(foodItemid, quantity);
         }
 
     }

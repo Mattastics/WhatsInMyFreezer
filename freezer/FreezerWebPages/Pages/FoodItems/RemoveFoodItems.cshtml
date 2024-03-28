@@ -1,0 +1,18 @@
+﻿@page
+@model FreezerWebPages.Pages.RemoveFoodItems
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Remove Food Items</h2>
+   @Html.AntiForgeryToken()
+<form method="post">
+    <label for="foodItems">Select a food to remove:</label>
+    <select asp-for="Request.FoodItemId">
+        @foreach (var item in Model.FoodItems)
+        {
+            <option value="@item.FoodItemId">@item.Name</option>
+        }
+    </select>
+    <input asp-for="Request.Quantity" type="number" min="0"/>
+    <input type="submit" value="Remove" />
+</form>
+

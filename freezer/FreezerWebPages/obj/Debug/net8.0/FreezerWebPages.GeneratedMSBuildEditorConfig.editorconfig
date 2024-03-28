@@ -17,3 +17,27 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\matth\sdm2s2\freezer\FreezerWebPages
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/FoodItems/AddFoodItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEl0ZW1zXEFkZEZvb2RJdGVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/FoodItems/RemoveFoodItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEl0ZW1zXFJlbW92ZUZvb2RJdGVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/FoodItems/RetryAddFoodItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEl0ZW1zXFJldHJ5QWRkRm9vZEl0ZW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/FoodItems/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEl0ZW1zXFN1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/FoodItems/ViewFoodItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZEl0ZW1zXFZpZXdGb29kSXRlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/matth/sdm2s2/freezer/FreezerWebPages/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

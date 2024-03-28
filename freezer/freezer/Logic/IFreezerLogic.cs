@@ -5,15 +5,37 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using freezer.DAL;
-using freezer.DAL.Migrations;
+using freezer.DAL.Entities;
+using freezer.Validators;
+
+
+//Interface Segreation Prinicple: This class is speicific and client-oriented,
+//meaning that any class implementing these interface will not be forced to use methods it does not need. 
+
 
 namespace freezer.Logic
 {
     public interface IFreezerLogic
+
     {
-        ///Adds an item to the freezer
+
+        Task<string> GetFoodItemNameByUPCAsync(string upcCode);
+
+
+        /// <summary>
+        /// Gets a food item by the UPC code.
+        /// </summary>
+        /// <param name="upcCode">The UPC code of the food item.</param>
+        /// <returns>The food item with the given UPC code.</returns>
+        FoodItem GetFoodItemByUPC(string upcCode);
+
+
+        ///Adds items to the freezer
         ///<param name="foodItem"> The food that will be added.</param>
-        public void AddFoodItem(FoodItem foodItem);
+        Task AddFoodItems(List<FoodItem> foodItems);
+
+        Task AddFoodWithoutUPC(List<FoodItem> foodItems);
+
 
         ///Gets all the food in the freezer
         public List<FoodItem> GetFoodItems();
@@ -26,21 +48,26 @@ namespace freezer.Logic
         ///<param name="foodItem"> The food that will be added</param>   
         public void UpdateFoodItem(FoodItem updatedFoodItem);
 
-       
+
         /// Gets an item by the name of the product. 
         /// <param name="Name"></param>
         public FoodItem GetFoodItemByName(string Name);
 
- 
+
         /// Check if a food item exists in the freezer
         /// <param name="foodItemId"></param>
         bool DoesFoodItemExist(int foodItemId);
 
-  
+
         /// Removes a speicified quantity of a food item from the freezer. 
         /// <param name="name"></param>
         /// <param name="quantityToRemove"></param>
-      
-        public void RemoveQuantityFromFoodItem(string name, int quantityToRemove);
+
+        void RemoveFoodItems(List<FoodItem> itemsToRemove);
+
+        void RemoveFoodItem(int foodItemid, int quantity);
+
+
     }
 }
+

@@ -1,0 +1,33 @@
+﻿@page
+@using FreezerWebPages.Models
+@model FreezerWebPages.Pages.RetryAddFoodItemsModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Food Items Status</h2>
+
+
+@if (Model.ItemsNotFound != null && Model.ItemsNotFound.Any())
+{
+    <div>
+        <h3>Some items need your attention</h3>
+        <p>The following UPC codes could not be found. Please enter the names:</p>
+        <form method="post">
+            @Html.AntiForgeryToken()
+            @for (int i = 0; i < Model.ItemsNotFound.Count; i++)
+            {
+                <div>
+                    <p>Item @(i + 1):</p>
+                    <label>Name:</label>
+                    <input asp-for="ItemsNotFound[i].Name" placeholder="Enter item name" required />
+                    <p>Quantity: @Model.ItemsNotFound[i].Quantity</p>
+                    <p>Date Added: @Model.ItemsNotFound[i].DateAdded.ToString("yyyy-MM-dd")</p>
+
+                    <input type="hidden" asp-for="ItemsNotFound[i].UPC" />
+                    <input type="hidden" asp-for="ItemsNotFound[i].Quantity" />
+                    <input type="hidden" asp-for="ItemsNotFound[i].DateAdded" />
+                </div>
+            }
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+}

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
-using freezer.DAL.Migrations;
+using freezer.DAL.Entities;
 
 namespace freezer.Validators
 {
@@ -12,7 +12,7 @@ namespace freezer.Validators
     {
         public FoodItemValidator()
         { 
-            RuleFor(x => x.Name).NotEmpty();
+            RuleFor(x=> x.UPC).NotEmpty();
             RuleFor(x => x.Quantity).GreaterThanOrEqualTo(1);
         }
     }

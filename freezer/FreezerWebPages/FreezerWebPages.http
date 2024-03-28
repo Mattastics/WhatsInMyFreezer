@@ -1,6 +1,55 @@
 @FreezerWebPages_HostAddress = http://localhost:5128
 
-GET {{FreezerWebPages_HostAddress}}/weatherforecast/
-Accept: application/json
+### Get all food items
+GET http://localhost:5128/FoodItems
+
+###
+
+### Add a single food item
+POST http://localhost:5128/FoodItems
+Content-Type: application/json
+
+{
+  "Name": "Apple",
+  "Quantity": 10,
+  "DateAdded": "2024-03-15"
+}
+
+###
+
+### Bulk add food items
+POST http://localhost:5128/FoodItems/bulk
+Content-Type: application/json
+
+{
+  "foodItems": [
+    {
+      "Name": "Banana",
+      "Quantity": 20,
+      "DateAdded": "2024-03-15"
+    },
+    {
+      "Name": "Orange",
+      "Quantity": 30,
+      "DateAdded": "2024-03-16"
+    }
+  ]
+}
+
+###
+
+### Add quantity to an existing food item
+PATCH http://localhost:5128/FoodItems/add
+Content-Type: application/json
+
+{
+  "Name": "Apple",
+  "Quantity": 5
+}
+
+###
+
+### Remove a quantity of a food item
+PATCH http://localhost:5128/FoodItems/remove/Apple/3
 
 ###

@@ -1,0 +1,84 @@
+﻿@page
+@using FreezerWebPages.Models
+@model FreezerWebPages.Pages.AddFoodItemsModel
+
+<h2>Add Food Items</h2>
+
+<form method="post" enctype="multipart/form-data" id="addFoodItemsForm">
+    @Html.AntiForgeryToken()
+
+    <div id="foodItemsList">
+        <div class="food-item">
+            <input type="text" id="foodItemUPC0" name="foodItems[0].UPC" placeholder="Type in the UPC Code" required />
+            <input type="number" id="foodItemQuantity0" name="foodItems[0].Quantity" placeholder="Quantity" min="0" required />
+            <input type="date" id="foodItemDateAdded0" name="foodItems[0].DateAdded" placeholder="Date Added" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
+        </div>
+    </div>
+    <button type="button" onclick="addFoodItem()">Add Another Item</button>
+    <input type="submit" value="Submit" />
+</form>
+
+<script>
+    var itemCount = 1;
+
+    function addFoodItem() {
+        var container = document.getElementById('foodItemsList');
+        var newItemHtml = `
+                    <div class="food-item">
+                        <input type="text" id="foodItemUPC${itemCount}" name="foodItems[${itemCount}].UPC" placeholder="Type in the UPC Code" required />
+                        <input type="number" id="foodItemQuantity${itemCount}" name="foodItems[${itemCount}].Quantity" placeholder="Quantity" min="0" required />
+                        <input type="date" id="foodItemDateAdded${itemCount}" name="foodItems[${itemCount}].DateAdded" placeholder="Date Added" value="${new Date().toISOString().split('T')[0]}" required />
+                    </div>`;
+        container.insertAdjacentHTML('beforeend', newItemHtml);
+        itemCount++;
+    }
+
+    function toggleScanner() {
+        var scanner = document.getElementById('scanner');
+        scanner.style.display = scanner.style.display === 'none' ? 'block' : 'none';
+        if (scanner.style.display === 'block') {
+            startCamera();
+        }
+    }
+
+    function startCamera() {
+        // Get access to the camera
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+                video.srcObject = stream;
+                video.play();
+            });
+        }
+    }
+
+    // Setup for webcam and canvas...
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+
+    // Capture button event listener...
+    document.getElementById('capture').addEventListener('click', function () {
+        context.drawImage(video, 0, 0, 640, 480);
+        const imageDataUrl = canvas.toDataURL('image/png');
+        fetch('/Barcode/Scan', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ imageData: imageDataUrl }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.name) {
+                    document.getElementById(`foodItemName${currentScanningIndex}`).value = data.name;
+                    toggleScanner(); // Hide scanner after successful scan
+                } else {
+                    console.error('Name not found in response:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                toggleScanner(); // Hide scanner if there is an error
+            });
+    });
+</script>

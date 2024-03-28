@@ -1,0 +1,61 @@
+﻿@page
+@model FreezerWebPages.Pages.SuccessModel
+
+<h2>Action Completed Successfully!</h2>
+
+<p>Here is the updated list of items in the freezer:</p>
+
+<p>What would you like to do now?</p>
+
+
+
+@if (Model.FoodItems != null && Model.FoodItems.Any())
+{
+    <ul>
+        @foreach (var item in Model.FoodItems)
+        {
+            <li>@item.Name - Quantity: @item.Quantity</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No items found in the freezer.</p>
+}
+<div>
+    <button class="btn" onclick="closeWindow()">Close this Window</button>
+    <a class="btn" href="/FoodItems/AddFoodItems">Add items to your freezer</a>
+    <a class="btn" href="/FoodItems/RemoveFoodItems">Remove items from your freezer</a>
+</div>
+
+<style>
+    .btn {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer; 
+        text-align: center; 
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<script>
+    function closeWindow() {
+ 
+        if (window.opener != null && !window.opener.closed) 
+        {
+            window.close();
+        } 
+        else
+        {
+
+            window.location.href = '/';
+    }
+</script>

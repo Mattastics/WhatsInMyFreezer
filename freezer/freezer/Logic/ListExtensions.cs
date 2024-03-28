@@ -1,4 +1,4 @@
-﻿using freezer.DAL.Migrations;
+﻿using freezer.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

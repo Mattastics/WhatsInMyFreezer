@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using freezer.DAL;
 
 #nullable disable
 
@@ -16,7 +17,7 @@ namespace freezer.DAL.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
 
-            modelBuilder.Entity("freezer.FoodItem", b =>
+            modelBuilder.Entity("freezer.DAL.Entities.FoodItem", b =>
                 {
                     b.Property<int>("FoodItemId")
                         .ValueGeneratedOnAdd()
@@ -26,11 +27,14 @@ namespace freezer.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("UPC")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("FoodItemId");
 

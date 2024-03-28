@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5Rx7xFWZtOfj0VgMHQ2jX87suSzfLl62ZYZyst2yBYEGPFOIbz2BvGy1d9su9M3wr7myOnMHkcXHPMv5mwu4rw==",
+  "dgSpecHash": "EP8d0lNrEniJ3XqXkyI1J3CFWNNYinI0XY2VJgymibwOo1ZSR8SC2g6xv1Pot7q2lQGYufqPExdvm3/1DuVPCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\freezer.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\matth\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
