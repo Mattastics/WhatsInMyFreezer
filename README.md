@@ -25,4 +25,4 @@ Fill Out Other Details: Along with the UPC, you'll be asked to input the item's 
 
 Submit: Once all the details are filled in, hit the submit button, and voilà, your item is added to your digital freezer inventory.
 
-The next steps in the development would be to clean up some of the code before making the web page look more user-friendly. 
+The next steps in the development would be to add a Food Item category that is already pulled from the API and allow the user to manually chose a category if no UPC is taken in. Then clean up some of the code before making the web page look more user-friendly. 
