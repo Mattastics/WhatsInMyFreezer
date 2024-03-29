@@ -14,7 +14,7 @@
     <ul>
         @foreach (var item in Model.FoodItems)
         {
-            <li>@item.Name - Quantity: @item.Quantity</li>
+            <li>@item.Name - Quantity: @item.Quantity. </li>
         }
     </ul>
 }
@@ -45,17 +45,3 @@ else
             background-color: #0056b3;
         }
 </style>
-
-<script>
-    function closeWindow() {
- 
-        if (window.opener != null && !window.opener.closed) 
-        {
-            window.close();
-        } 
-        else
-        {
-
-            window.location.href = '/';
-    }
-</script>

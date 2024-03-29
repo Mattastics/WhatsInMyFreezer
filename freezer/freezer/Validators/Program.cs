@@ -1,4 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using freezer;
@@ -11,7 +10,7 @@ using freezer.DAL;
 var services = CreateServiceCollection();
 
 var freezerLogic = services.GetService<IFreezerLogic>();
- 
+
 string userInput = DisplayMenuAndGetInput();
 
 while (userInput.ToLower() != "e")
@@ -28,7 +27,7 @@ while (userInput.ToLower() != "e")
         var quantity = int.Parse(Console.ReadLine());
 
         var foodItem = new FoodItem { Name = name, Quantity = quantity, DateAdded = DateTime.Now };
-        freezerLogic.AddFoodItems(new List<FoodItem> { foodItem});
+        freezerLogic.AddFoodItems(new List<FoodItem> { foodItem });
     }
 
     if (userInput == "2")
@@ -104,12 +103,7 @@ while (userInput.ToLower() != "e")
 }
 
 
-
-
-
-
-
-    static string DisplayMenuAndGetInput()
+static string DisplayMenuAndGetInput()
 {
     Console.WriteLine("Press 1 to add itmes to your freezer.");
     Console.WriteLine("Press 2 to view the items to your freezer");

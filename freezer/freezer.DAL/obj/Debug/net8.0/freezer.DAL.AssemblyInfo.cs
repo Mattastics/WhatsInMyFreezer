@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("freezer.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+939fc15bb61f54de028f74da8f8470c1893cb437")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f233dd2cffb798f3b3d7eace9b043ee41c327cf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("freezer.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("freezer.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

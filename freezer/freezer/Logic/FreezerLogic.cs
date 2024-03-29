@@ -10,7 +10,7 @@ using freezer.Validators;
 
 namespace freezer
 {
-    public class FreezerLogic : IFreezerLogic
+public class FreezerLogic : IFreezerLogic
     {
         private readonly IFoodItemRepository _foodItemRepo;
         private readonly FoodDataService _foodDataService;
@@ -20,7 +20,6 @@ namespace freezer
             _foodItemRepo = foodItemRepository;
             _foodDataService = foodDataService;
         }
-
 
         public async Task<string> GetFoodItemNameByUPCAsync(string upcCode)
         {
@@ -59,6 +58,7 @@ namespace freezer
             }
         }
 
+
         public async Task AddFoodWithoutUPC(List<FoodItem> foodItems)
         {
             foreach (var foodItem in foodItems)
@@ -69,15 +69,6 @@ namespace freezer
 
                 if (validationResult.IsValid)
                 {
-                    // Generate a placeholder UPC if it's missing or a temporary one was previously assigned
-                    if (string.IsNullOrWhiteSpace(foodItem.UPC) || foodItem.UPC.StartsWith("TEMP"))
-                    {
-                        // Generating a temporary UPC using current ticks and the hash code of the item's name
-                        long ticks = DateTime.UtcNow.Ticks;
-                        int nameHash = foodItem.Name.GetHashCode();
-                        foodItem.UPC = $"TEMP{ticks}{nameHash}";
-                    }
-
 
                     // Check if an item with the same placeholder UPC already exists
                     var existingItem = _foodItemRepo.GetFoodItemByUPC(foodItem.UPC);

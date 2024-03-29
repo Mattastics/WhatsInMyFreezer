@@ -19,6 +19,5 @@ namespace freezer.DAL.Entities
 
         public DateTime DateAdded { get; set; }
 
-
     }
 }

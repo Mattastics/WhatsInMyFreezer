@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using freezer.DAL.Entities;
 using Microsoft.Extensions.Logging;
+using System.ComponentModel;
+
 
 namespace FreezerWebPages.Pages
 {
@@ -34,7 +36,7 @@ namespace FreezerWebPages.Pages
             if (!ModelState.IsValid || FoodItems == null || !FoodItems.Any())
             {
                 ModelState.AddModelError("", "No items provided.");
-                return Page(); 
+                return Page();
             }
 
             bool allItemsFound = true;

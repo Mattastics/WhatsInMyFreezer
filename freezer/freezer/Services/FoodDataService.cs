@@ -29,7 +29,7 @@ public class FoodDataService
             if (!string.IsNullOrEmpty(content))
             {
                 var json = JObject.Parse(content);
-                
+
                 if (json["products"] is JArray productsArray && productsArray.Count > 0)
                 {
                     var productName = productsArray[0]["title"]?.ToString();
