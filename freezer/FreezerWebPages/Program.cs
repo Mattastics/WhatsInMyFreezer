@@ -1,7 +1,6 @@
 using freezer;
 using freezer.Logic;
 using Microsoft.EntityFrameworkCore;
-using IronBarCode;
 using Microsoft.AspNetCore.Builder;
 using freezer.DAL.Entities;
 using freezer.DAL;
