@@ -32,12 +32,13 @@ namespace FreezerWebPages.Pages
         {
             if (TempData["FoodItems"] != null)
             {
-                ItemsNotFound = System.Text.Json.JsonSerializer.Deserialize<List<FoodItem>>(TempData["FoodItems"].ToString());
+                ItemsNotFound = System.Text.Json.JsonSerializer.Deserialize<List<FoodItem>>(TempData["ItemsNotFound"].ToString());
                 TempData.Keep("FoodItems");
                 foreach (var item in ItemsNotFound)
                 {
                     Console.WriteLine($"Item Name: {item.Name}, UPC: {item.UPC}, QTY: {item.Quantity}, {item.DateAdded}");
                 }
+                Console.WriteLine(ItemsNotFound.Count + " retry");
             }
         }
 

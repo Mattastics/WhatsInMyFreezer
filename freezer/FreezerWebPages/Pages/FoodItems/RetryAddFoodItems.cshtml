@@ -19,9 +19,32 @@
                     <p>Item @(i + 1):</p>
                     <label>Name:</label>
                     <input asp-for="ItemsNotFound[i].Name" placeholder="Enter item name" required />
+
+                    <label>Category</label>
+                    <select asp-for="ItemsNotFound[i].Category">
+                        <option value="">Select a category</option>
+                        <option value="Alcoholic Beverages">Alcoholic Beverages</option>
+                        <option value="Beverages">Beverages</option>
+                        <option value="Bakery">Bakery</option>
+                        <option value="Candy & Chocolate">Candy & Chocolate</option>
+                        <option value="Condiments & Sauces">Condiments & Sauces</option>
+                        <option value="Cooking & Baking">Cooking & Baking</option>
+                        <option value="Dairy Products">Dairy Products</option>
+                        <option value="Dips & Spreads">Dips & Spreads</option>
+                        <option value="Frozen Desserts & Novelties">Frozen Desserts & Novelties</option>
+                        <option value="Fruits & Vegetables">Fruits & Vegetables</option>
+                        <option value="Grains, Rice, & Cereal">Grains, Rice, & Cereal</option>
+                        <option value="Meat, Seafood & Eggs">Meat, Seafood & Eggs</option>
+                        <option value="Nuts & Seeds">Nuts & Seeds</option>
+                        <option value="Pasta & Noodles">Pasta & Noodles</option>
+                        <option value="Prepared Foods">Prepared Foods</option>
+                        <option value="Seasonings & Spices">Seasonings & Spices</option>
+                        <option value="Snack Foods">Snack Foods</option>
+                        <option value="Soups & Broths">Soups & Broths</option>
+                        <option value="Tofu, Soy, & Vegetarian Products">Tofu, Soy, & Vegetarian Products</option>
+                    </select>
                     <p>Quantity: @Model.ItemsNotFound[i].Quantity</p>
                     <p>Date Added: @Model.ItemsNotFound[i].DateAdded.ToString("yyyy-MM-dd")</p>
-
                     <input type="hidden" asp-for="ItemsNotFound[i].UPC" />
                     <input type="hidden" asp-for="ItemsNotFound[i].Quantity" />
                     <input type="hidden" asp-for="ItemsNotFound[i].DateAdded" />

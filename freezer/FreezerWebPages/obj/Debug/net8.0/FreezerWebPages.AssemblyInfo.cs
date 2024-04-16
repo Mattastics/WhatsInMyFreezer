@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FreezerWebPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b82f6f8a01e7e737602f78c2d0e065033b39a041")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21960681986cf347eac74343bf352331de3b36c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FreezerWebPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FreezerWebPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

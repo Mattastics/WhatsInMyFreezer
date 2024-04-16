@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using freezer.DAL.Entities;
 using freezer.DAL;
+using FreezerWebPages.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var host = WebApplication.CreateBuilder(args);

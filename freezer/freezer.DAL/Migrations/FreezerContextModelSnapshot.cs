@@ -23,6 +23,9 @@ namespace freezer.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Category")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("TEXT");
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -26,6 +27,7 @@ namespace freezer.DAL.Entities
             return _dbContext.FoodItem.FirstOrDefault(f => f.UPC == upcCode);
         }
 
+
         public void AddFoodItems(List<FoodItem> foodItems)
         {
             foreach (var foodItem in foodItems)
@@ -47,15 +49,30 @@ namespace freezer.DAL.Entities
             _dbContext.SaveChanges();
         }
 
+        public async Task<List<FoodItem>> GetAllFoodItemsAsync()
+        {
+            return await _dbContext.FoodItem.ToListAsync();
+        }
+
+        public List<FoodItem> GetAllFoodItems()
+        {
+            return _dbContext.FoodItem.ToList();
+        }
+        public List<string> GetAllCategories()
+        {
+            return _dbContext.FoodItem.Select(item => item.Category).Distinct().ToList();
+        }
+
 
         public FoodItem GetFoodItemById(int foodItemId)
         {
             return _dbContext.FoodItem.SingleOrDefault(x => x.FoodItemId == foodItemId);
         }
-        public List<FoodItem> GetAllFoodItems()
+        public async Task<List<FoodItem>> GetFoodItemsAsync()
         {
-            return _dbContext.FoodItem.ToList();
+            return await _dbContext.FoodItem.ToListAsync();
         }
+
 
         public void UpdateFoodItem(FoodItem updatedFoodItem)
         {

@@ -9,13 +9,11 @@ using freezer.DAL.Entities;
 using Microsoft.Extensions.Logging;
 using System.ComponentModel;
 
-
 namespace FreezerWebPages.Pages
 {
     public class AddFoodItemsModel : PageModel
     {
         private readonly IFreezerLogic _freezerLogic;
-
         private readonly ILogger<AddFoodItemsModel> _logger;
 
         [BindProperty]
@@ -39,44 +37,37 @@ namespace FreezerWebPages.Pages
                 return Page();
             }
 
-            bool allItemsFound = true;
-
+            List<FoodItem> itemsNotFound = new List<FoodItem>();
             foreach (var foodItem in FoodItems)
             {
-                Console.WriteLine(foodItem.UPC);
-
                 if (!string.IsNullOrWhiteSpace(foodItem.UPC))
                 {
-                    var itemName = await _freezerLogic.GetFoodItemNameByUPCAsync(foodItem.UPC);
-                    if (!string.IsNullOrWhiteSpace(itemName))
+                    (string Name, string Category) = await _freezerLogic.GetFoodItemNameByUPCAsync(foodItem.UPC);
+                    if (Name != null)
                     {
-                        foodItem.Name = itemName;
+                        foodItem.Name = Name;
+                        foodItem.Category = Category ?? "Other"; // Assign "Other" if category is not provided
                     }
                     else
                     {
-                        allItemsFound = false;
-                        foodItem.Name = "Unknown Item"; // Placeholder for unknown items.
-                        _logger.LogInformation($"Item not add: {foodItem.Name}");
+                        itemsNotFound.Add(foodItem); // Add to itemsNotFound list if UPC not found
                     }
                 }
                 else
                 {
-                    // If UPC is empty or whitespace, consider the item as not found
-                    allItemsFound = false;
-                    foodItem.Name = "Unknown Item"; // Placeholder for items without a UPC.
+                    itemsNotFound.Add(foodItem); // Add to itemsNotFound list if UPC is empty or whitespace
                 }
             }
 
-            if (allItemsFound)
+            if (itemsNotFound.Any())
             {
-                await _freezerLogic.AddFoodItems(FoodItems);
-                return RedirectToPage("./Success");
+                TempData["FoodItems"] = System.Text.Json.JsonSerializer.Serialize(itemsNotFound);
+                return RedirectToPage("./RetryAddFoodItems");
             }
             else
             {
-                // Serialize the items that were not found
-                TempData["FoodItems"] = System.Text.Json.JsonSerializer.Serialize(FoodItems.Where(item => item.Name == "Unknown Item").ToList());
-                return RedirectToPage("./RetryAddFoodItems");
+                await _freezerLogic.AddFoodItems(FoodItems); // Only add to DB if all items were found
+                return RedirectToPage("./Success");
             }
         }
     }

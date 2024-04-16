@@ -14,7 +14,9 @@
     <ul>
         @foreach (var item in Model.FoodItems)
         {
-            <li>@item.Name - Quantity: @item.Quantity. </li>
+            <li>@item.Name - <b>Quantity:</b> @item.Quantity. <b>Category:</b> @item.Category
+
+            </li>
         }
     </ul>
 }
@@ -23,9 +25,9 @@ else
     <p>No items found in the freezer.</p>
 }
 <div>
-    <button class="btn" onclick="closeWindow()">Close this Window</button>
     <a class="btn" href="/FoodItems/AddFoodItems">Add items to your freezer</a>
     <a class="btn" href="/FoodItems/RemoveFoodItems">Remove items from your freezer</a>
+    <a class="btn" href="/FoodItems/ViewFoodItems">View the items in your freezer</a>
 </div>
 
 <style>

@@ -1,6 +1,7 @@
 ﻿using freezer.DAL.Entities;
 using freezer.Logic;
 using freezer.Validators;
+using FreezerWebPages.Services;
 
 //Single Responsibility Priniciple: This class is responsible for the logic related to freezer inventory management such as 
 //adding, updating, and retrieving food items, ensuring that only has one reason to change. 
@@ -21,10 +22,12 @@ public class FreezerLogic : IFreezerLogic
             _foodDataService = foodDataService;
         }
 
-        public async Task<string> GetFoodItemNameByUPCAsync(string upcCode)
+        public async Task<(string Name, string Category)> GetFoodItemNameByUPCAsync(string upcCode)
         {
+            // Call the FoodDataService to get the name and category based on the UPC code
             return await _foodDataService.GetFoodItemNameByUPCAsync(upcCode);
         }
+
 
         public async Task AddFoodItems(List<FoodItem> foodItems)
         {
@@ -34,11 +37,15 @@ public class FreezerLogic : IFreezerLogic
                 var validationResult = validator.Validate(foodItem);
                 if (validationResult.IsValid)
                 {
+                    // Check if the name is empty and there is a UPC to look up the name and category
                     if (string.IsNullOrWhiteSpace(foodItem.Name) && !string.IsNullOrWhiteSpace(foodItem.UPC))
                     {
-                        foodItem.Name = await _foodDataService.GetFoodItemNameByUPCAsync(foodItem.UPC);
+                        var (name, category) = await _foodDataService.GetFoodItemNameByUPCAsync(foodItem.UPC);
+                        foodItem.Name = name;
+                        foodItem.Category = category;
                     }
 
+                    // Check if there's an existing item by UPC in the repository
                     var existingItem = _foodItemRepo.GetFoodItemByUPC(foodItem.UPC);
                     if (existingItem != null)
                     {
@@ -47,6 +54,7 @@ public class FreezerLogic : IFreezerLogic
                     }
                     else
                     {
+                        // If no existing item, add the new one
                         _foodItemRepo.AddFoodItems(new List<FoodItem> { foodItem });
                     }
                 }
@@ -57,7 +65,6 @@ public class FreezerLogic : IFreezerLogic
                 }
             }
         }
-
 
         public async Task AddFoodWithoutUPC(List<FoodItem> foodItems)
         {
@@ -90,6 +97,11 @@ public class FreezerLogic : IFreezerLogic
             }
         }
 
+        public List<string> GetCategories()
+        {
+            return _foodItemRepo.GetAllCategories();
+        }
+
 
         public FoodItem GetFoodItemByUPC(string upcCode)
         {
@@ -97,10 +109,15 @@ public class FreezerLogic : IFreezerLogic
             return _foodItemRepo.GetFoodItemByUPC(upcCode);
         }
 
+        public async Task<List<FoodItem>> GetFoodItemsAsync()
+        {
+            return await _foodItemRepo.GetAllFoodItemsAsync();
+        }
+
         public List<FoodItem> GetFoodItems()
-                {
-                    return _foodItemRepo.GetAllFoodItems();
-                }
+        {
+            return _foodItemRepo.GetAllFoodItems();
+        }
 
         public FoodItem GetFoodItemById(int FoodItemId)
         {

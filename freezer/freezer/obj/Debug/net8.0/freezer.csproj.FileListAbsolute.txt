@@ -39,6 +39,7 @@ C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Logg
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -79,4 +80,3 @@ C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\refint\freezer.dll
 C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\freezer.pdb
 C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\freezer.genruntimeconfig.cache
 C:\Users\matth\sdm2s2\freezer\freezer\obj\Debug\net8.0\ref\freezer.dll
-C:\Users\matth\sdm2s2\freezer\freezer\bin\Debug\net8.0\Newtonsoft.Json.dll

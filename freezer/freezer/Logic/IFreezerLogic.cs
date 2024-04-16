@@ -19,7 +19,7 @@ namespace freezer.Logic
 
     {
 
-        Task<string> GetFoodItemNameByUPCAsync(string upcCode);
+        Task<(string Name, string Category)> GetFoodItemNameByUPCAsync(string upcCode);
 
 
         /// <summary>
@@ -36,9 +36,13 @@ namespace freezer.Logic
 
         Task AddFoodWithoutUPC(List<FoodItem> foodItems);
 
+        List<string> GetCategories();
+
+        Task<List<FoodItem>> GetFoodItemsAsync();
 
         ///Gets all the food in the freezer
-        public List<FoodItem> GetFoodItems();
+        List<FoodItem> GetFoodItems();
+
 
         ///Gets a item by the id of the product
         ///<param name="FoodItemID">The id given to the food</param>

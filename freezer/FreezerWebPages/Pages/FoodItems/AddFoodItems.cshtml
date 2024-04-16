@@ -12,7 +12,7 @@
         <div class="food-item" id="foodItem0">
             <input type="text" name="foodItems[0].UPC" placeholder="Type in the UPC Code" required />
             <input type="number" name="foodItems[0].Quantity" placeholder="Quantity" min="0" required />
-            <input type="date" name="foodItems[0].DateAdded" placeholder="Date Added" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
+            <input type="date" name="foodItems[0].DateAdded" placeholder="Date Added" value="@DateTime.Now.ToString("yyyy-MM-dd")"" required />
         </div>
     </div>
     <button type="button" onclick="addFoodItem()">Add Another Item</button>

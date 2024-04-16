@@ -6,8 +6,11 @@
 
         void AddFoodItems(List<FoodItem> foodItems);
 
+        List<string> GetAllCategories();
 
         FoodItem GetFoodItemById(int foodItemid);
+
+        Task<List<FoodItem>> GetAllFoodItemsAsync();
 
         public List<FoodItem> GetAllFoodItems();
 
