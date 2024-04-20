@@ -66,7 +66,7 @@ public class FreezerLogic : IFreezerLogic
             }
         }
 
-        public async Task AddFoodWithoutUPC(List<FoodItem> foodItems)
+        public Task AddFoodWithoutUPC(List<FoodItem> foodItems)
         {
             foreach (var foodItem in foodItems)
             {
@@ -95,6 +95,8 @@ public class FreezerLogic : IFreezerLogic
                     throw new InvalidOperationException(validationResult.Errors.Select(e => e.ErrorMessage).FirstOrDefault());
                 }
             }
+
+            return Task.CompletedTask;
         }
 
         public List<string> GetCategories()

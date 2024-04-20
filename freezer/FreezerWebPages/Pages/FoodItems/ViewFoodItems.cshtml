@@ -15,7 +15,9 @@
             <th>
                 <a asp-page="./ViewFoodItems" asp-route-sortOrder="@(Model.CurrentSort == "name_desc" ? "name" : "name_desc")">Name</a>
             </th>
-            <th>Quantity</th>
+            <th>
+                <a asp-page="./ViewFoodItems" asp-route-sortOrder="@(Model.CurrentSort == "quantity_desc" ? "name" : "quantity_desc")">Quantity</a>
+            </th>
             <th>
                 <a asp-page="./ViewFoodItems" asp-route-sortOrder="@(Model.CurrentSort == "date_desc" ? "date" : "date_desc")">Date Added</a>
             </th>

@@ -11,7 +11,7 @@ namespace FreezerWebPages.Pages
     public class RemoveFoodItems : PageModel
     {
         private readonly IFreezerLogic _freezerLogic;
-        private readonly ILogger<RemoveFoodItems> _logger;
+
 
         [BindProperty]
         public RemoveFoodItemsRequest Request { get; set; }

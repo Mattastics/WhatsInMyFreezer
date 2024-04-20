@@ -17,4 +17,8 @@
     <ProjectReference Include="..\freezer\freezer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

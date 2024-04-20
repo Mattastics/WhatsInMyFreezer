@@ -136,3 +136,4 @@ C:\Users\matth\sdm2s2\freezer\FreezerWebPages\obj\Debug\net8.0\refint\FreezerWeb
 C:\Users\matth\sdm2s2\freezer\FreezerWebPages\obj\Debug\net8.0\FreezerWebPages.pdb
 C:\Users\matth\sdm2s2\freezer\FreezerWebPages\obj\Debug\net8.0\FreezerWebPages.genruntimeconfig.cache
 C:\Users\matth\sdm2s2\freezer\FreezerWebPages\obj\Debug\net8.0\ref\FreezerWebPages.dll
+C:\Users\matth\sdm2s2\freezer\FreezerWebPages\bin\Debug\net8.0\FreezerWebPages.staticwebassets.runtime.json

@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\matth\\sdm2s2\\freezer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\fooditems\\viewfooditems.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\fooditems\\viewfooditems.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\_viewstart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\_viewstart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\fooditems\\removefooditems.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\fooditems\\removefooditems.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE5E360-B659-43F5-A16B-8A3D18274585}|freezer\\freezer.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezer\\logic\\freezerlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE5E360-B659-43F5-A16B-8A3D18274585}|freezer\\freezer.csproj|solutionrelative:freezer\\logic\\freezerlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\fooditems\\viewfooditems.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{FCE5E360-B659-43F5-A16B-8A3D18274585}|freezer\\freezer.csproj|solutionrelative:freezer\\logic\\ifreezerlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE5E360-B659-43F5-A16B-8A3D18274585}|freezer\\freezer.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezer\\logic\\freezerlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE5E360-B659-43F5-A16B-8A3D18274585}|freezer\\freezer.csproj|solutionrelative:freezer\\logic\\freezerlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4DB994F-2AED-4885-A58B-714755D9F4AE}|freezer.DAL\\freezer.DAL.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezer.dal\\entities\\ifooditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4DB994F-2AED-4885-A58B-714755D9F4AE}|freezer.DAL\\freezer.DAL.csproj|solutionrelative:freezer.dal\\entities\\ifooditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C4DB994F-2AED-4885-A58B-714755D9F4AE}|freezer.DAL\\freezer.DAL.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezer.dal\\entities\\fooditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4DB994F-2AED-4885-A58B-714755D9F4AE}|freezer.DAL\\freezer.DAL.csproj|solutionrelative:freezer.dal\\entities\\fooditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\fooditems\\removefooditems.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|solutionrelative:freezerwebpages\\pages\\fooditems\\removefooditems.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35370A4E-737C-4BD5-B93D-8AB950AA4F4E}|FreezerWebPages\\FreezerWebPages.csproj|c:\\users\\matth\\sdm2s2\\freezer\\freezerwebpages\\pages\\fooditems\\success.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,19 +107,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FreezerWebPages\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FreezerWebPages\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-20T18:56:16.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "FreezerWebPages\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T18:05:28.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Program.cs",
+              "RelativeDocumentMoniker": "FreezerWebPages\\Program.cs",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Program.cs",
+              "RelativeToolTip": "FreezerWebPages\\Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T17:59:44.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViewFoodItems.cshtml",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml",
               "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml",
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-14T12:47:29.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "FoodItemRepository.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer.DAL\\Entities\\FoodItemRepository.cs",
               "RelativeDocumentMoniker": "freezer.DAL\\Entities\\FoodItemRepository.cs",
@@ -107,12 +166,11 @@
               "RelativeToolTip": "freezer.DAL\\Entities\\FoodItemRepository.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowDgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T01:11:28.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T01:11:28.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Success.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\Success.cshtml.cs",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\Success.cshtml.cs",
@@ -120,25 +178,24 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\Success.cshtml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADgvxYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T12:57:11.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T12:57:11.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "RemoveFoodItems.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml.cs",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml.cs",
               "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml.cs",
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBoAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T01:11:51.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "FoodItem.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer.DAL\\Entities\\FoodItem.cs",
               "RelativeDocumentMoniker": "freezer.DAL\\Entities\\FoodItem.cs",
@@ -146,12 +203,11 @@
               "RelativeToolTip": "freezer.DAL\\Entities\\FoodItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T12:26:26.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T12:26:26.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "RetryAddFoodItems.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml.cs",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml.cs",
@@ -159,12 +215,37 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T04:06:28.926Z",
+              "WhenOpened": "2024-04-14T04:06:28.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FreezerWebPages\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T17:51:26.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\_ViewStart.cshtml.cs",
+              "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\_ViewStart.cshtml.cs",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\_ViewStart.cshtml.cs",
+              "RelativeToolTip": "FreezerWebPages\\Pages\\_ViewStart.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T18:06:56.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RetryAddFoodItems.cshtml",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml",
@@ -172,12 +253,24 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\RetryAddFoodItems.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T04:06:27.104Z",
+              "WhenOpened": "2024-04-14T04:06:27.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FreezerLogic.cs",
+              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Logic\\FreezerLogic.cs",
+              "RelativeDocumentMoniker": "freezer\\Logic\\FreezerLogic.cs",
+              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Logic\\FreezerLogic.cs",
+              "RelativeToolTip": "freezer\\Logic\\FreezerLogic.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAIAwwEcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T00:30:58.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ViewFoodItems.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml.cs",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml.cs",
@@ -185,25 +278,11 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\ViewFoodItems.cshtml.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAYwDAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T12:47:35.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T12:47:35.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FreezerLogic.cs",
-              "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Logic\\FreezerLogic.cs",
-              "RelativeDocumentMoniker": "freezer\\Logic\\FreezerLogic.cs",
-              "ToolTip": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Logic\\FreezerLogic.cs",
-              "RelativeToolTip": "freezer\\Logic\\FreezerLogic.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAwwHUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T00:30:58.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "IFreezerLogic.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Logic\\IFreezerLogic.cs",
               "RelativeDocumentMoniker": "freezer\\Logic\\IFreezerLogic.cs",
@@ -211,12 +290,11 @@
               "RelativeToolTip": "freezer\\Logic\\IFreezerLogic.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAgwCsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T03:47:28.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T03:47:28.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "IFoodItemRepository.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer.DAL\\Entities\\IFoodItemRepository.cs",
               "RelativeDocumentMoniker": "freezer.DAL\\Entities\\IFoodItemRepository.cs",
@@ -224,12 +302,11 @@
               "RelativeToolTip": "freezer.DAL\\Entities\\IFoodItemRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T12:53:57.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T12:53:57.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Success.cshtml",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\Success.cshtml",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\Success.cshtml",
@@ -237,12 +314,11 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\Success.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T12:57:16.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T12:57:16.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "AddFoodItems.cshtml",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml",
@@ -250,12 +326,11 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T03:54:14.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T03:54:14.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "AddFoodItems.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml.cs",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml.cs",
@@ -263,12 +338,11 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\AddFoodItems.cshtml.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAIwCoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T03:54:17.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T03:54:17.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "RemoveFoodItems.cshtml",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml",
               "RelativeDocumentMoniker": "FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml",
@@ -276,12 +350,11 @@
               "RelativeToolTip": "FreezerWebPages\\Pages\\FoodItems\\RemoveFoodItems.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T04:50:17.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T04:50:17.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "FoodDataService.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer\\Services\\FoodDataService.cs",
               "RelativeDocumentMoniker": "freezer\\Services\\FoodDataService.cs",
@@ -289,12 +362,11 @@
               "RelativeToolTip": "freezer\\Services\\FoodDataService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAIAwwDwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T00:39:20.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T00:39:20.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "FreezerContext.cs",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\freezer.DAL\\FreezerContext.cs",
               "RelativeDocumentMoniker": "freezer.DAL\\FreezerContext.cs",
@@ -302,12 +374,11 @@
               "RelativeToolTip": "freezer.DAL\\FreezerContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T22:25:23.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T22:25:23.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\appsettings.json",
               "RelativeDocumentMoniker": "FreezerWebPages\\appsettings.json",

@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "z7Tf0EZWc61cNAwDQAj7Ws5QcgPO2bifzFc6v8OeXxQ=",
+  "Hash": "VtcJsLnSBwXeloiKNjcEv7vRJgbxsr9BvNhrPQChKt8=",
   "Source": "FreezerWebPages",
   "BasePath": "_content/FreezerWebPages",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FreezerWebPages\\wwwroot",
+      "Source": "FreezerWebPages",
+      "ContentRoot": "C:\\Users\\matth\\sdm2s2\\freezer\\FreezerWebPages\\wwwroot\\",
+      "BasePath": "_content/FreezerWebPages",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
