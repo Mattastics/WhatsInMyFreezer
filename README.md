@@ -17,8 +17,7 @@ Here's a step-by-step guide to manually entering the UPC code:
 3) Enter the UPC Code: You'll see a text field labeled "UPC Code" or something similar. Simply type the 12-digit number you found on your item's packaging into this field. Then add the quantity you are adding and the date you are adding it. 
 4) Submit: Once all the details are filled in, hit the submit button, and voilà, your item is added to your digital freezer inventory.
 
-No UPC code? No Problem! The program will ask you the name the item you are putting in and then autogenerate a Temporary UPC-Code that will be tied to that items name so any time you add more of that item, it will be logged as the same item. 
+No UPC code? No Problem! The program will ask you the name the item you are putting in and then autogenerate a Temporary UPC-Code that will be tied to that items name so any time you add more of that item, it will be logged as the same item. You can then choose from a variety of preset categories. 
 
-The next steps in the development would be to add a Food Item category that is already pulled from the API and allow the user to manually chose a category if no UPC is taken in. This would help further organize the inventory into digestable chunks. Then, clean up some of the code before making the web page look more user-friendly. 
 
 You may notice various references to a barcode scanner in the code. During its development, various barcode scanner APIs were explored to enable item addition via webcam scanning. However, due to technical limitations (I need a better webcam!), the focus shifted to manual UPC entry, keeping the system user-friendly and effective. Although the primary functionality now relies on manual entry, the foundational barcode scanning features remain within the application, allowing for future enhancements and integration as technology evolves.
